@@ -10,4 +10,7 @@ def index():
 def exemplo1():
     pessoa = {"nome":"Vinicius", "matricula":2200420}
     return render_template('exemplo1.html', dados=pessoa)
+@app.route('/exemplo2')
+def exemplo2():
+    return render_template('exemplo2.html', nome='Vinicius', matricula=2200420, nota=5.1)
 app.run(debug=True)
