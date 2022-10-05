@@ -13,4 +13,8 @@ def exemplo1():
 @app.route('/exemplo2')
 def exemplo2():
     return render_template('exemplo2.html', nome='Vinicius', matricula=2200420, nota=5.1)
+@app.route('/alunos')
+def listagem_alunos():
+    alunos = ['Ana Maria', 'Beatriz Silva', 'Carlos Eduardo', 'Daniel Santos', 'Emilia Ferreira']
+    return render_template('alunos.html', disc='Desenvolvimento Web', lista_alunos=alunos)
 app.run(debug=True)

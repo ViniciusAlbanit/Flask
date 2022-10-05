@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Listagem de alunos</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>Lista de alunos da disciplina {{ disc }}</h1>
+<ul>
+{% for aluno in lista_alunos %}
+<li>{{ aluno }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
