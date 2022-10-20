@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Cursinho Web - Contato</title>
+{% endblock %}
+
+{% block conteudo %}
+        <h1>Dados para contato:</h1>
+        <form method="POST">
+            <div>
+                <label for="tx-nome">Nome completo:</label><br>
+                <input type="text" name="nome" id="tx-nome" size="50">
+            </div>
+            <div>
+                <label for="tx-email">E-mail:</label><br>
+                <input type="email" name="email" id="tx-email">
+            </div>
+            <div>
+                <label for="se-disciplina">Qual disciplina te interessa mais?</label><br>
+                <select name="disciplina" id="se-disciplina">
+                    <option>Desenvolvimento Web</option>
+                    <option>Programação Orientada a Objetos</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Quais linguagens você conhece?</legend>
+                <input type="checkbox" name="linguagens" id="cb-csharp" value="csharp">
+                <label for="cb-csharp">C#</label><br>
+
+                <input type="checkbox" name="linguagens" id="cb-java" value="java">
+                <label for="cb-java">Java</label><br>
+
+                <input type="checkbox" name="linguagens" id="cb-js" value="js">
+                <label for="cb-js">JavaScript</label><br>
+
+                <input type="checkbox" name="linguagens" id="cb-python" value="python">
+                <label for="cb-python">Python</label><br>
+
+                <input type="checkbox" name="linguagens" id="cb-php" value="php">
+                <label for="cb-php">PHP</label><br>
+
+                <input type="checkbox" name="linguagens" id="cb-ruby" value="ruby">
+                <label for="cb-ruby">Ruby</label>
+            </fieldset>
+            <fieldset>
+                <legend>Onde você conheceu o Cursinho Web?</legend>
+                <input type="radio" name="conheceu" id="ra-amigos" value="amigos">
+                <label for="ra-amigos">Amigos</label><br>
+
+                <input type="radio" name="conheceu" id="ra-google" value="google">
+                <label for="ra-google">Google</label><br>
+
+                <input type="radio" name="conheceu" id="ra-youtube" value="youtube">
+                <label for="ra-youtube">Youtube</label><br>
+
+                <input type="radio" name="conheceu" id="ra-instagram" value="instagram">
+                <label for="ra-instagram">Instagram</label>
+            </fieldset>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+{% endblock %} 
