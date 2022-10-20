@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Cursinho Web - Disciplinas</title>
+{% endblock %}
+
+{% block conteudo %}
+    <h1>Disciplinas Oferecidas:</h1>
+    <section>
+        <article>
+            <h2 class="titulo-article">Desenvolvimento Web</h2>
+            <p>Conhecer os conceitos de desenvolvimento de sistemas dinâmicos para Internet, aplicando as mais recentes tecnologias e métodos para esta área.</p>
+            <h3>Habilidades</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python e Flask</li>
+            </ul>
+            <img src="/static/img/web.png" alt="Tecnologias da Web">
+        </article>
+        <article>
+            <h2 class="titulo-article">Programação Orientada a Objetos</h2>
+            <p>Desenvolver lógica de raciocínio para organizar os elementos necessários para o desenvolvimento de programas orientados a objetos.</p>
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Dicionários</li>
+                <li>Tratamento de exceções</li>
+                <li>Testes unitários</li>
+                <li>Construção de classes, atributos e métodos</li>
+                <li>Herança e polimorfismo</li>
+            </ul>
+            <img src="/static/img/python.png" alt="Logotipo do Python">
+        </article>
+    </section>
+{% endblock %}
