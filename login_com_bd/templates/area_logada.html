@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do usuário</title>
+</head>
+<body>
+    <header>
+        <a href="/logout">sair</a>
+    </header>
+    <h1>Bem vindo, {{ aluno.nome }}!</h1>
+    <p>O seu curso é: {{ aluno.curso }} (Início: {{ aluno.data_inicio }})</p>
+    <p>Lista de notas:</p>
+    <ul>
+        {% for nota in aluno.notas %}
+        <li>{{ nota }}</li>
+        {{% endfor %}}
+    </ul>
+</body>
+</html>
