@@ -9,6 +9,6 @@ def formulario():
     if nome == None or idade == None:
         return render_template('formulario.html')
     else:
-        return f"O nome é: {nome}, e a idade é: {idade}"
+        return f"O nome é: {nome}, e a idade é: {idade}. Estamos Felizes de ter você conosco!!!!"
 
 app.run(debug=True)
