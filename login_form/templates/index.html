@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="tx-usuario">Usuário:</label><br>
+        <input type="text" name="usuario" id="tx-usuario"><br>
+
+        <label for="tx-senha">Senha:</label><br>
+        <input type="password" name="senha" id="tx-senha"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p style="color: red;">{{ erro }}</p>
+</body>
+</html>
